@@ -20,7 +20,7 @@ let naytto = document.getElementById("click_naytto");
 
 let klikkaukset = 0;
 
-let rahat = 999990;
+let rahat = 0;
 
 let lisays = 2;
 
