@@ -1,10 +1,52 @@
+@media screen and (max-width: 626px) {
+    /* mobiili */
+    .menu {
+        position: relative; 
+        top: auto;
+        right: auto;
+        bottom: 0; 
+    }
+    .nappula{
+
+        position: absolute;
+        margin-top: 50%;
+        
+        
+    }
+
+
+    .lentavat{
+        position: relative;
+        top:5%;
+
+    }
+
+
+    #ilmoitukset{
+        position: relative;
+        z-index: 9;
+
+    }
+
+
+
+
+  }
+
+
+
+
+
 
 
 #play
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-50%);
     
 
 
@@ -38,7 +80,7 @@ body{
     display: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 18%;
     /*animaatioon */
     transition-property:  transform;
     transition-duration: 0.1s;
@@ -102,6 +144,8 @@ body{
 
 position: absolute;
 
+
+
 }
 
 #kakkuvalinta,#taco,#shortcake
@@ -118,19 +162,15 @@ position: absolute;
 .tuotteet{
 
     
-    text-align: right;
+    
     color: rgb(135, 141, 141);
     font-size: 22px;
     font-family: "Comic Sans MS", sans-serif;
-    
+    text-align: right;
 
 }
 
-.menu
-{
+.menu {
     position: absolute;
-    top: 20px;
-    right: 100px;
-
-
+    right: 0; /* Tai vasen: 0; riippuen sijainnista */
 }

@@ -79,6 +79,7 @@ function startGame()
     raha_naytto.innerHTML = " Cash 0";
     object.style.display = "block";
     rate.innerHTML = "Cash rate: 0"
+    
     setInterval(payVAT,50000);
     setInterval(makeCash,interval);
 
@@ -123,8 +124,8 @@ function makeFood()
     kolikko.className ="lentavat";
     kolikko.src = "images/kolikko.png";
     //kolikoiden alueiden säätö
-    kolikko.style.left = Math.random() * 100+ 850+ "px";
-    kolikko.style.top = Math.random() * 100 + 350+"px";
+    kolikko.style.left = Math.random() * 10 + 45+ "%";
+    kolikko.style.top = Math.random() * 10 + 30+"%";
     document.getElementById("gameContainer").appendChild(kolikko);
     //kolikon himmennnts vähitellen ja poisto
     setTimeout(function(){
@@ -253,7 +254,7 @@ function buyShortCake()
             object.src = "images/shortcake.png"
             lisays = 10;
             cashRate = 1;
-            onkoOstettuTaco = true;
+            onkoOstettuShortcake = true;
             osto_aani.play();
         
         }
