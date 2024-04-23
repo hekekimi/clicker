@@ -1,0 +1,136 @@
+
+
+#play
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+
+
+
+
+.background{
+
+   
+    background-image: url("images/kitchen.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body{
+
+
+    background-color: goldenrod;
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    
+}
+
+.nappula{
+
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    /*animaatioon */
+    transition-property:  transform;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    cursor:pointer;
+   
+
+}
+
+.vibrate {
+    animation-name:  shaking;
+    animation-duration:  0.1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+     
+  }
+  
+  @keyframes shaking {
+    0% { transform: translateX(3); }
+    25% { transform: translateY(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateY(-3px); }
+    100% { transform: translateX(3); }
+  }
+
+
+
+
+
+.naytto {
+
+    display: block;
+    color: rgb(59, 27, 34);
+    font-size: 30px;
+    font-family: 'Comic Sans MS', 'Gill Sans MT','Trebuchet MS', sans-serif;
+
+    
+  
+
+}
+
+
+
+
+
+
+
+
+#ilmoitukset{
+    position: absolute;
+    right: 400px;
+    color: rgb(219, 85, 23);
+    font-size: 36px;
+    background-color: black;
+    width: fit-content;
+    font-family: 'Comic Sans MS', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+
+.lentavat{
+
+position: absolute;
+
+}
+
+#kakkuvalinta,#taco,#shortcake
+{
+    
+   float: inline-end;
+    filter: grayscale();
+    cursor: not-allowed;
+    
+    
+    
+}
+
+.tuotteet{
+
+    
+    text-align: right;
+    color: rgb(135, 141, 141);
+    font-size: 22px;
+    font-family: "Comic Sans MS", sans-serif;
+    
+
+}
+
+.menu
+{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+
+
+}
