@@ -135,6 +135,9 @@ function makeFood()
         },1000)
     },500)
     haveMoneyorNot();
+    getBonus();
+    
+
 }
 
 
@@ -321,7 +324,27 @@ function goToVacation()
 
 
 
+function getBonus()
 
+    
+
+    {
+        if(klikkaukset == 500)
+        {
+        rahat += 5000;
+        cashRate = 10;
+
+        ilmoitukset.innerHTML = "You got a 5000 $ bonus!"
+
+
+
+        setTimeout(function(){
+            ilmoitukset.innerHTML = "";  
+       
+           },2000);
+
+        }
+    }
 
 
 
