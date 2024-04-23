@@ -7,12 +7,13 @@
         bottom: 0; 
     }
     .nappula{
-
+        
         position: absolute;
         margin-top: 50%;
         
-        
     }
+   
+   
 
 
     .lentavat{
@@ -172,5 +173,26 @@ position: absolute;
 
 .menu {
     position: absolute;
-    right: 0; /* Tai vasen: 0; riippuen sijainnista */
+    right: 0; 
 }
+
+/*valintavärin poisto*/
+.nappula::selection 
+{
+    background-color:transparent;
+} 
+.nappula::-moz-selection
+{
+    background-color:transparent;
+}
+.nappula
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    
+    -ms-user-select: none;
+    user-select: none;
+
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}  
