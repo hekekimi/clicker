@@ -17,7 +17,7 @@ shortcake.addEventListener("click",buyShortCake);
 
 let naytto = document.getElementById("click_naytto");
 
-
+let menu = document.getElementById("menu");
 let klikkaukset = 0;
 
 let rahat = 0;
@@ -79,9 +79,11 @@ function startGame()
     raha_naytto.innerHTML = " Cash 0";
     object.style.display = "block";
     rate.innerHTML = "Cash rate: 0"
-    
+    // "veloitus" 50 sekunnion välein
     setInterval(payVAT,50000);
     setInterval(makeCash,interval);
+    menu.style.visibility = "visible";
+    document.getElementById("peliotsikko").remove();
 
 }
 
@@ -304,7 +306,7 @@ function payVAT()
 
 function goToVacation()
 
-{
+{   //peli loppuu kun tienattu miljoona
     if(rahat >= 1000000)
     {
       

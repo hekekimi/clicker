@@ -4,7 +4,8 @@
         position: relative; 
         top: auto;
         right: auto;
-        bottom: 0; 
+        bottom: 0;
+        visibility: hidden;
     }
     .nappula{
         
@@ -12,6 +13,7 @@
         margin-top: 50%;
         
     }
+   
    
    
 
@@ -124,7 +126,24 @@ body{
 }
 
 
+@font-face {
+    font-family: otsikkoFontti;
+    src: url("dino.otf");
+}
 
+
+
+#peliotsikko
+{
+
+    font-family: 'otsikkoFontti','Comic Sans MS', 'Gill Sans MT','Trebuchet MS';
+    text-align: center;
+    color:crimson;
+    font-size: 36px;
+    
+    
+
+}
 
 
 
@@ -173,7 +192,8 @@ position: absolute;
 
 .menu {
     position: absolute;
-    right: 0; 
+    right: 0;
+    visibility: hidden;
 }
 
 /*valintavärin poisto*/
